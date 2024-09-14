@@ -1,110 +1,87 @@
-# Blum Airdrop Bot
+# 🎮 BLUMBot
 
-## Description
+Welcome to GameBot, your automated assistant for managing and optimizing your experience on the Blum platform!
 
-Blum Airdrop Bot automates interactions with the Blum airdrop platform. It includes functionalities to claim rewards, manage farming sessions, complete tasks, and play games automatically.
+## 🌟 Features
 
-## Features
+- 🔄 Automatic farming and balance claiming
+- 🎯 Task completion automation
+- 🎁 Daily reward claiming
+- 👥 Friend balance management
+- 🕹️ Automated game playing and reward collection
+- 👤 Support multiple accounts
 
-- **Claim Farm Reward**: Automatically claim rewards from farming activities.
-- **Start Farming Session**: Begin a new farming session.
-- **Auto Complete Tasks**: Automatically complete available tasks and claim rewards.
-- **Auto Play and Claim Game Points**: Play games and claim game points automatically.
-- **Claim Daily Reward**: Automatically claim daily rewards.
-
-## Flows
-
-### Default Flow
-
-The **Default Flow** allows users to manually select specific tasks to perform. You can choose from:
-
-1. **Claim Farm Reward**: Automatically claim farm rewards.
-2. **Start Farming Session**: Begin a new farming session.
-3. **Auto Complete Tasks**: Complete and claim rewards for available tasks.
-4. **Auto Play and Claim Game Points**: Play games and claim game points.
-5. **Claim Daily Reward**: Claim your daily reward.
-
-After performing an action, you can choose to set up a cron job for regular automation or exit the bot if no automation is needed.
-
-### One-time Flow
-
-The **One-time Flow** runs a continuous sequence of tasks without manual intervention. This flow includes:
-
-1. **Claim Farm Reward**: Claim the farm reward.
-2. **Claim Daily Reward**: Claim the daily reward.
-3. **Claim Game Points**: Play games and claim game points.
-4. **Start Farming Session**: Begin a new farming session.
-
-The One-time Flow will continuously execute these tasks, handling errors gracefully and attempting to restart after a specified delay (e.g., 12 hours) if issues arise.
-
-## Setup
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 14 or later)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
+- Node.js (v12 or higher)
+- npm (comes with Node.js)
 
 ### Installation
 
-1. **Clone the repository:**
+1. Clone this repository:
 
-    ```bash
-    git clone https://github.com/Tuyul-Google/BLUMBot.git
-    ```
+   ```
+   git clone https://github.com/Tuyul-Google/BLUMBot.git
+   ```
 
-2. **Navigate to the project directory:**
+2. Navigate to the project directory:
 
-    ```bash
-    cd blum-airdrop-bot
-    ```
+   ```
+   cd BLUMBot
+   ```
 
-3. **Install dependencies:**
+3. Install dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```
+   npm install
+   ```
 
-### Configuration
+4. Edit `data.txt` file in the project root and add your Blum query IDs, one per line.
 
-1. **Create a `.env` file** in the root directory of the project.
+   ```
+   nano data.txt
+   ```
 
-2. **Add your `SESSION_KEY` to the `.env` file**. Example format:
+### Usage
 
-    ```env
-    SESSION_KEY=YOUR_QUERY_ID_VALUE_HERE
-    ```
+Run the bot with:
 
-   - To find your `SESSION_KEY`, follow these steps:
-     1. Open [Web Telegram](https://web.telegram.org) in your browser.
-     2. Open the [Blum Bot](http://t.me/BlumCryptoBot/app?startapp=ref_jg3l1bWKvr).
-     3. Open DevTools (right-click on the page and select "Inspect" or press `F12`).
-     4. Go to the "Application" tab, then "Local Storage", and choose `https://telegram.blum.codes`.
-     5. Find `QUERY_ID`, copy its value.
+```
+node main.js
+```
 
-   - **Connection Issues?** If you can't open the Blum bot, you may need to use the following Chrome extension to bypass connection restrictions: [Ignore X-Frame-Headers](https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe).
+Follow the prompts to start the automation process.
 
-## Running the Bot
+## 📝 Configuration
 
-To start the bot and choose a flow:
+- Edit the `data.txt` file to manage multiple accounts.
+- Adjust task completion and game playing strategies in the `main.js` file.
 
-1. **Start the bot:**
+## 🔐 Security
 
-    ```bash
-    npm start
-    ```
+- Keep your `data.txt` file secure and never share your query IDs.
+- Use this bot responsibly and in accordance with Blum's terms of service.
 
-2. **Choose the script to run:**
-   - **Default Flow**: Manually select tasks and optionally set up automation.
-   - **One-time Flow**: Run a continuous sequence of tasks automatically.
+## 🔗 Registration
 
-## Donations
+New to Blum? Register using our referral link:
 
-If you would like to support the development of this project, you can make a donation using the following addresses:
+[Sign up for Blum](http://t.me/BlumCryptoBot/app?startapp=ref_jg3l1bWKvr)
 
-- **Solana**: `Dsk8kU7G543azDo4YXE8JrSvVoUutAd6GndU4htqBHVx`
-- **EVM**: `0x000926B7eFC58d07502E3cEaDEbF05282f5777f5`
-- **BTC**: `bc1p074x7w0smynpk788c7n2mravglzk86c8xwartzjvuj83lqhlewjqsnt2q7`
-
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/gamebot-blum/issues).
+
+## 💖 Support
+
+If you found this project helpful, consider giving it a ⭐️!
+
+---
+
+**Disclaimer:** This bot is for educational purposes only. Use at your own risk. The developers are not responsible for any consequences resulting from the use of this bot.
