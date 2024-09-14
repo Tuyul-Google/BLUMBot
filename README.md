@@ -49,7 +49,7 @@ The One-time Flow will continuously execute these tasks, handling errors gracefu
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/dante4rt/blum-airdrop-bot.git
+    git clone https://github.com/Tuyul-Google/BLUMBot.git
     ```
 
 2. **Navigate to the project directory:**
@@ -76,7 +76,7 @@ The One-time Flow will continuously execute these tasks, handling errors gracefu
 
    - To find your `SESSION_KEY`, follow these steps:
      1. Open [Web Telegram](https://web.telegram.org) in your browser.
-     2. Open the [Blum Bot](https://t.me/BlumCryptoBot/app?startapp=ref_vTHusRz4j0).
+     2. Open the [Blum Bot](http://t.me/BlumCryptoBot/app?startapp=ref_jg3l1bWKvr).
      3. Open DevTools (right-click on the page and select "Inspect" or press `F12`).
      4. Go to the "Application" tab, then "Local Storage", and choose `https://telegram.blum.codes`.
      5. Find `QUERY_ID`, copy its value.
